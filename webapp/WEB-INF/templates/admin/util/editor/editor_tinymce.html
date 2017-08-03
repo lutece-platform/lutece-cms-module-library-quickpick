@@ -1,5 +1,6 @@
 <script type="text/javascript" src="${webapp_url}js/editors/tinymce/tinymce.min.js"></script>
-<#macro initEditor editorWidth=450 cssFiles="" type=''>
+<#macro initEditor editorWidth=450 cssFiles="" type='' 
+>
 <#assign editorLocale="" />
 <#-- We only have the language pack for French (France) installed in webapp/js/editors/tinymce/langs -->
 <#-- Some lutece plugins pass locale.getLanguage() (="fr"), some pass the locale object (toString="fr_FR", or more complicated...) -->
@@ -30,7 +31,9 @@
 		],
 		inline: true,
 		<#if editorLocale != "">language : '${editorLocale}',</#if>
-			paste_data_images: true
+		paste_data_images: true,
+                lutece_library_img_default_space_id: '#dskey{library.img.defaultSpace.id}',
+                lutece_library_pdf_default_space_id: '#dskey{library.pdf.defaultSpace.id}'
 		});
 	<#else>
 	tinyMCE.init({
@@ -59,6 +62,8 @@
 		],
 		toolbar: "undo redo | paste | styleselect | bold italic  | forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | lutece luteceImg lutecePdf link media | print preview fullscreen code",
 		contextmenu: "lutece luteceImg lutecePdf link image | paste copy cut | inserttable | cell row column deletetable",
+                lutece_library_img_default_space_id: '#dskey{library.img.defaultSpace.id}',
+                lutece_library_pdf_default_space_id: '#dskey{library.pdf.defaultSpace.id}'
 	});
 	</#if>
 </script>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Plugin library-quickpick</title>
+    </properties>
+    <body>
+        <section name="Plugin library-quickpick">
+            <!--
+            <p>
+                <img src="images/library-quickpick.png" />
+            </p>
+            -->
+            <subsection name="Introduction">
+                <p>This Module adds buttons to the tinyMCE editor to propose a direct access to the "linkService"
+                    to upload and insert an image or a link to a document in the content.</p>
+            </subsection>
+            <subsection name="Configuration">
+                <p>This module requires the Library and Document plugins</p>
+            </subsection>
+            <subsection name="Usage">
+                <p></p>
+            </subsection>
+        </section>
+    </body>
+</document>
+
