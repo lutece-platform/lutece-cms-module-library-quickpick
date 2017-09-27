@@ -49,7 +49,7 @@
 
     <properties>
         <componentName>library-quickpick</componentName>
-        <jiraProjectName>LIBRARYQUICKPICK</jiraProjectName>
+        <jiraProjectName>QUICKPICK</jiraProjectName>
         <jiraComponentId></jiraComponentId>
     </properties>
 </project>
